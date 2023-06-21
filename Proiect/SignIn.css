@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #fff;
+    background: url(Photos/Login.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    
+    align-content: center;
+    align-items: center;
+}
+
+button{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #c9184a;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: .7;
+    transition: opacity .3s ease;
+    border: 0;
+}
+
+button:hover{
+    opacity: 1; 
+}
+
+.form-container {
+    
+    transform: translate(-50% -50%);
+    background: linear-gradient(rgba(0, 0, 0, 0, 3), rgba(0, 0, 0, 0, 3));
+    width: 380px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #000;
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+span {
+    color: #fff;
+}
+
+.control input {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #222;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+}
+
+.control input[type="submit"] {
+    background-color: #37003c;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: .7;
+    transition: opacity .3s ease;
+}
+
+.control input[type="submit"]:hover {
+    opacity: 1;
+}
+
+.link {
+    text-align: center;
+}
+
+.link a {
+    text-decoration: none;
+    color: #fff;
+    opacity: .7;
+    transition: opacity .3s ease;
+}
+
+.link a:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+label {
+    color: white;
+}
+
+.name-error-message {
+    color: white;
+}
+
+.password-error-message,
+.password-error-message2 {
+    color: white;
+}
+
+ input[type="button"] {
+    background-color: #37003c;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: .7;
+    transition: opacity .3s ease;
+}
+
+input[type="button"]:hover {
+    opacity: 1;
+}

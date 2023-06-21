@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="Video.css">
+</head>
+
+<body>
+    <form>
+        <input type="button" value="BACK" onclick="history.back()">
+    </form>
+    <div class="container">
+        <video src="Videos/Pr1.mp4" class="slider" autoplay loop muted controls></video>
+
+        <ul>
+            <li onclick="videoslider('Videos/Pr1.mp4')"><video src="Videos/Pr1.mp4" autoplay loop></video></li>
+            <li onclick="videoslider('Videos/Pr2.mp4')"><video src="Videos/Pr2.mp4" autoplay loop></video></li>
+            <li onclick="videoslider('Videos/Pr3.mp4')"><video src="Videos/Pr3.mp4" autoplay loop></video></li>
+        </ul>
+    </div>
+
+    <script src="Video.js"></script>
+</body>
+
+</html>

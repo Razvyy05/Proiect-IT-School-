@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+
+}
+
+/* Navbar */
+.navbar {
+    background-color: #37003c;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    height: 80px;
+}
+
+.navbar-expand-md ul {
+    background-color: #37003c;
+
+}
+
+#prLogo {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-top: 0%;
+}
+
+#teamLogos ul img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#teamLogos {
+    height: 70px !important;
+    background-color: white;
+}
+
+.footer {
+    background-image: url(Photos/FooterBG.jpg);
+    color: white;
+    padding: 70px 0;
+}
+
+.footer .container {
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer ul {
+    list-style: none;
+    font-size: 18px;
+}
+
+.footer li {
+    list-style: none;
+    padding: 8px;
+    display: block;
+    margin-left: -40px;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links li {
+    margin-left: 1px;
+}
+
+.footer ul li:hover {
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+thead {
+    font-size: 30px;
+    text-align: left;
+
+}
+
+main {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 110vw;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3 {
+    font-size: 36px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    color: orange;
+    text-align: center;
+    font-weight: 700;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+@media(max-width: 1370px) {
+    #teamLogos {
+        display: none;
+    }
+
+    thead {
+        font-size: 20px;
+    }
+
+    .panel h3 {
+        visibility: hidden;
+    }
+
+    
+}
+
+@media(max-width: 767px) {
+    .footer .container{
+       display: flexbox;
+       flex-wrap: wrap;
+        
+    }
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+   
+    main .container {
+        margin-top: 7.5cm;
+    }
+}
+
+@media(max-width: 567px) {
+    .footer .container{
+        display: flexbox;
+        flex-wrap: wrap;
+         
+     }
+    .footer-col {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
